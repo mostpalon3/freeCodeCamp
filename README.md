@@ -4,3 +4,4 @@
 # [Palindrome checker](https://mostpalon3.github.io/freeCodeCamp/)
 
 -This is a palindrome checker built using javascript ,css & html.
+(deployed on branch palindrome-checker)
