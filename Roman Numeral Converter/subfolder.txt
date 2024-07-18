@@ -1,0 +1,61 @@
+Deploying a subfolder to GitHub Pages involves a few steps to ensure that only the contents of that subfolder are deployed and served correctly. Here’s a step-by-step guide on how to deploy a specific subfolder to GitHub Pages:
+
+### 1. Prepare Your Subfolder
+
+Make sure your subfolder (e.g., `dist`, `build`, etc.) contains all the files you want to deploy. Typically, this folder includes your compiled or built assets like HTML, CSS, JavaScript, and any other static files necessary for your website.
+
+### 2. Create a New Orphan Branch
+
+GitHub Pages deploys from the `gh-pages` branch by default, but if you want to deploy a specific subfolder, you'll need to create an orphan branch (a branch without a commit history) that will only contain the contents of your subfolder.
+
+```bash
+# Create a new orphan branch (replace `gh-pages-subfolder` with your preferred branch name)
+git checkout --orphan gh-pages-subfolder
+```
+
+### 3. Remove Unnecessary Files
+
+Remove all files from this new branch (except for the `.gitignore` file):
+
+```bash
+git rm -rf .
+git add .gitignore # Add back the .gitignore if needed
+```
+
+### 4. Add Your Subfolder's Contents
+
+Copy the contents of your subfolder (`dist`, `build`, etc.) into the root of this branch:
+
+```bash
+# For example, assuming your subfolder is `dist`
+cp -r ../path/to/your/subfolder/* .
+```
+
+### 5. Commit and Push
+
+Commit the changes and push the branch to GitHub:
+
+```bash
+git commit -m "Deploying subfolder to GitHub Pages"
+git push origin gh-pages-subfolder
+```
+
+### 6. Configure GitHub Pages
+
+- Go to your repository on GitHub.
+- Navigate to the repository settings.
+- Scroll down to the GitHub Pages section.
+- Select the branch you just pushed (`gh-pages-subfolder`) from the dropdown menu.
+- Save the settings.
+
+### 7. Verify Deployment
+
+GitHub Pages will now deploy the contents of your subfolder. You can access your site using the GitHub Pages URL for your repository (typically `https://username.github.io/repositoryname/`).
+
+### Notes:
+
+- **Custom Domain:** If you have a custom domain, configure it in the GitHub Pages settings.
+  
+- **Updating Content:** Whenever you update your subfolder (e.g., `dist`), repeat steps 2-5 to update the deployment.
+
+This method allows you to deploy only a specific subfolder to GitHub Pages, keeping your repository clean and organized while serving your website from the desired directory.
