@@ -1,0 +1,126 @@
+/* colors-btn -  088395*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,html{
+    height: 150%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    align-items: center;
+    text-align: center;
+    background-color: #071952;
+    color: #EBF4F6;
+}
+.heading{
+    margin: 30px 0px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+::placeholder{
+    text-align: center;
+}
+.label-cash{
+    font-size: medium;
+}
+#cash{
+    height: 28px;
+    width: 200px;
+    margin-top: 10px;
+}
+#purchase-btn{
+    background-color: #EBF4F6;
+    color: #071952;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    box-shadow:inset 0 0 5px #37B7C3;
+    margin: 20px;
+    
+}
+.total{
+    height: 40px;
+    width: 170px;
+    background-color: #071952;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: inset 0 0 0 10px #37B7C3;
+    position: relative;
+    right: 2vw;
+}
+.box{
+    height: 30px;
+    width: 40px;
+    background-color: #37B7C3;
+    position: relative;
+    right: 5svw;
+}
+.cid-container{
+    display: flex;
+    width: 320px;
+    height: 280px;
+    background-color: #37B7C3;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    border-radius: 30px 30px 0px 0px;
+    justify-content: space-between;
+}
+.cid{
+    height: 240px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #EBF4F6;
+    color: #071952;
+    margin: 20px 20px 20px 0px;
+    text-align: left;
+    justify-content: center;
+    padding: 10px;
+}
+.rectangle{
+    height: 50px;
+    width: 320px;
+    background-color: #37B7C3;
+    color: #071952;
+    margin: auto;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: #071952;
+}
+.grid-container{
+    height: 62px;
+    width: 62px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2px;
+    margin: 20px 15px;
+}
+.grid-box{
+    height: 20px;
+    width: 20px;
+    background-color: #071952;
+    border-radius: 2px;
+}
+#change-due{
+    margin-bottom: 10px;
+}
