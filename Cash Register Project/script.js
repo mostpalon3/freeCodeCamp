@@ -58,17 +58,16 @@ function checkCashRegister(cash){
 
     let changeAmount = cash*100 - price*100;
     let changeAmountCheck = changeAmount;
-
+    console.log(changeAmountCheck);
     let change = [];
     let status = '';
 
     let cidSum = 0;
     let totalSum = 0;
     cid.forEach(elem => {
-        totalSum += elem[1]*100;
-        cidSum = totalSum/100
+        cidSum += elem[1]*100;
     })
-    if(cidSum >= cash){
+    if(cidSum >= changeAmount){
     let filterCid = cid.filter(element => element[1] !== 0).reverse();
     
     filterCid.forEach(element => {
@@ -91,7 +90,6 @@ function checkCashRegister(cash){
         change = [];
     }else if(changeAmount == 0 && changeAmountCheck == cidSum){
         status = 'CLOSED';
-        change = cid.filter(elem => {elem[1] !== 0});
         inputDom.value = '';
     }else{
         status = 'OPEN';
