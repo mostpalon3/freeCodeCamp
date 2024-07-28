@@ -63,7 +63,6 @@ function checkCashRegister(cash){
     let status = '';
 
     let cidSum = 0;
-    let totalSum = 0;
     cid.forEach(elem => {
         cidSum += elem[1]*100;
     })
