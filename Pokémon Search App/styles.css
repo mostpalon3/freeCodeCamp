@@ -1,0 +1,81 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body,html{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A285F;
+    color: white;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+}
+h1 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #0075BE;
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #FFCC00;
+    letter-spacing: 4px;
+    font-size: xxx-large;
+                                                
+  }
+.poke-container{
+    background-color: #0C3348;
+    color: #EFFCD5
+    ;
+    height: 85%;
+    width: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 14px 11px 2px black;
+}
+.container-display{
+    background-color: #DFDFDF;
+    height: 45%;
+    width: 90%;
+    margin: 20px;
+    border-radius: 5px;
+}
+.table-content{
+    width: 100%;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+}
+td,th{
+    height: 40px;
+    width: 70%;
+    background-color:  #37796C;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+#search-button{
+    background-color: #37796C;
+    border: none;
+    height: 30px;
+    width: 70px;
+    border-radius: 20px;
+    color: aquamarine;
+    box-shadow: 3px 3px 3px black;
+}
+#search-input{
+    height: 30px;
+    width: 230px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 3px 3px black;
+}
+#types{
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
