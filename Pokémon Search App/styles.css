@@ -1,0 +1,158 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body,html{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A285F;
+    color: white;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+}
+h1 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #0075BE;
+    font-family: 'Pokemon Solid', sans-serif;
+    color: #FFCC00;
+    letter-spacing: 4px;
+    font-size: xxx-large;
+                                                
+  }
+.poke-container{
+    background-color: #0C3348;
+    color: #EFFCD5
+    ;
+    height: 85%;
+    width: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 14px 11px 2px black;
+}
+.container-display{
+    background-color: #cacaca;
+    height: 45vh;
+    width: 85%;
+    margin: 20px;
+    border-radius: 5px;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0px;
+}
+.table-content{
+    width: 100%;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 0px;
+}
+td,th{
+    height: 3.8vh;
+    width: 70%;
+    background-color:  #37796C;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+#search-button{
+    background-color: #37796C;
+    border: none;
+    height: 30px;
+    width: 70px;
+    border-radius: 20px;
+    color: aquamarine;
+    box-shadow: 3px 3px 3px black;
+}
+#search-input{
+    height: 30px;
+    width: 230px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 3px 3px black;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #cacaca;
+}
+#types{
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.type-color{
+    margin: 4px;
+    padding: 4px;
+    border-radius: 6px;
+    font-size: medium;
+    background-color: lightgreen;
+    height: 20px;
+}
+#sprite{
+    background-color: rgb(218, 218, 218);
+    margin: 10px;
+}
+.poison{
+    background-color: rgb(91, 23, 91);
+    color: white;
+}
+.grass{
+    background-color: lightgreen;
+}
+.water{
+    background-color: skyblue;
+}
+.fire{
+    background-color: orangered;
+}
+.electric{
+    background-color: rgb(228, 228, 2);
+}
+.psychic{
+    background-color: black;
+    color: white;
+}
+.fighting{
+    background-color: red;
+    color: white;
+}
+.flying{
+    background-color: rgb(16, 67, 104);
+    color: white;
+}
+.ground{
+    background-color: rgb(81, 3, 3);
+    color: white;
+}
+.rock{
+    background-color: rgb(119, 67, 67);
+    color: white;
+}
+.bug{
+    background-color: purple;
+    color: white;
+}
+.ice{
+    background-color: rgb(0, 132, 255);
+}
+.ghost{
+    background-color: gray;
+    color: white;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.steel{
+    background-color: gray;
+}
