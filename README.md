@@ -23,3 +23,9 @@
 
 -This is a cash register project built using javascript ,css & html. And uses the principal of <strong>2D-arrays</strong> and other basic principle of data structure.
 (deployed on branch cash-register-project)
+
+### Project 5:
+# [Pokemon Search App](https://pokedex--pokedex-stats.netlify.app/)
+
+-This is a pokédex project built using javascript ,css & html. And uses the principal of <strong>api calling</strong> and other basic principle of data structure.
+(deployed on branch pokedex)
